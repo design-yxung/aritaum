@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARITAUM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/25444b223e.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/effect.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/product_style.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="icon" href="img/aritaum.ico">
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div id="headWrap">
+                <!-- logo -->
+                <h1 id="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="아리따움"></a>
+                </h1>
+                <!-- menu -->
+                <nav>
+                    <ul id="mainMenu">
+                        <li>카테고리
+                            <ul class="subMenu">
+                                <li>
+                                    <a href="#" onclick="return false;">기초</a>
+                                    <ul class="list">
+                                        <li><a href="#">스킨/토너</a></li>
+                                        <li><a href="#">로션/에멀젼</a></li>
+                                        <li><a href="#">크림</a></li>
+                                        <li><a href="#">에센스/세럼</a></li>
+                                        <li><a href="#">기초 세트</a></li>
+                                        <li><a href="#">아이/넥</a></li>
+                                        <li><a href="#">페이스오일</a></li>
+                                        <li><a href="#">미스트</a></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">마스크/팩</a>
+                                    <ul class="list">
+                                        <li><a href="#">시트마스크</a></li>
+                                        <li><a href="#">슬리핑팩</a></li>
+                                        <li><a href="#">워시오브팩</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">선케어</a>
+                                    <ul class="list">
+                                        <li><a href="#">선크림</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">클렌징</a>
+                                    <ul class="list">
+                                        <li><a href="#">클렌징폼/젤</a></li>
+                                        <li><a href="#">클렌징오일/워터</a></li>
+                                        <li><a href="#">클렌징로션/크림</a></li>
+                                        <li><a href="#">클렌징티슈</a></li>
+                                        <li><a href="#">립&아이리무버</a></li>
+                                        <li><a href="#">스크럽/필링</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">메이크업</a>
+                                    <ul class="list">
+                                        <li><a href="#">페이스</a></li>
+                                        <li><a href="#">아이</a></li>
+                                        <li><a href="#">립</a></li>
+                                        <li><a href="#">치크</a></li>
+                                        <li><a href="#">네일</a></li>
+                                        <li><a href="#">헤어</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">헤어케어</a>
+                                    <ul class="list">
+                                        <li><a href="#">샴푸/린스</a></li>
+                                        <li><a href="#">트린트먼트/팩</a></li>
+                                        <li><a href="#">에센스/토닉</a></li>
+                                        <li><a href="#">스타일링</a></li>
+                                        <li><a href="#">헤어컬러</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">바디케어</a>
+                                    <ul class="list">
+                                        <li><a href="#">바디워시</a></li>
+                                        <li><a href="#">바디보습</a></li>
+                                        <li><a href="#">핸드/풋</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">미용소품</a>
+                                    <ul class="list">
+                                        <li><a href="#">페이스소품</a></li>
+                                        <li><a href="#">메이크업소품</a></li>
+                                        <li><a href="#">헤어소품</a></li>
+                                        <li><a href="#">바디소품</a></li>
+                                        <li><a href="#">클렌징소품</a></li>
+                                        <li><a href="#">파우치/공용기</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">건강식품</a>
+                                    <ul class="list">
+                                        <li><a href="#">콜라겐</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">남성</a>
+                                    <ul class="list">
+                                        <li><a href="#">기초</a></li>
+                                        <li><a href="#">선케어</a></li>
+                                        <li><a href="#">메이크업</a></li>
+                                        <li><a href="#">클렌징/바디</a></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </nav>
+                <!-- active -->
+                <ul id="active">
+                    <li class="search">
+                        <a href="#" onclick="return false;" style="--active-icon:url(../img/icon-search.png)"></a>
+                        <div class="activeCon">
+                            <form class="searchBar" action="" method="get">
+                                <input type="text" name="" id="productSearch" placeholder="여름대비 선크림 검색하기">
+                                <input class="searchBtn" type="submit" value=" "></button>
+                            </form>
+                            <h6>지금 뜨고 있는 검색어는?</h6>
+                            <ul class="popSearch">
+                                <li>
+                                    <a href="#">NEW 네오 쿠션</a>
+                                </li>
+                                <li>
+                                    <a href="#">페이셜 코튼 화장솜 대용량</a>
+                                </li>
+                                <li>
+                                    <a href="#">아리따움</a>
+                                </li>
+                                <li>
+                                    <a href="#">세라마이드 아토 수딩 젤</a>
+                                </li>
+                                <li>
+                                    <a href="#">에스쁘아</a>
+                                </li>
+                                <li>
+                                    <a href="#">센슈얼 파우더 매트 리퀴드</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="user" style="--active-icon:url(../img/icon-users.png)"><a href="javascript:loginOpen();scrollDisable()"></a></li>
+                    <li class="cart" data-bask="8"><a href="javascript:cartOpen()" style="--active-icon:url(../img/icon-basket.png)" ></a></li>
+                </ul>
+            </div>
+            <div class="cartList">
+                <button onclick="cartClose()"><i class="fa-solid fa-xmark"></i></button>
+                <div class="cartTitle">
+                    <h2>장바구니</h2>
+                    <a href="#" onclick="return false">
+                        바로가기<i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+                <ul>
+                    <!-- 장바구니 리스트 -->
+                    <li>
+                        <h3 class="proImg" style="--cart-img:url(../img/product_img/IMG1658bZr361812303.png)"><a href="#"></a></h3>
+                        <div class="cartInfo">
+                            <p class="proTitle">
+                                <span>아이오페</span>
+                                <span>UV 쉴드에센셜 톤업 선 50ml</span>
+                            </p>
+                            <p class="option">수량 : 2</p>
+                            <p class="priceInfo">
+                                <span class="sale">10%</span>
+                                <span class="price">63,000원</span>
+                                <span class="toPrice">70,000원</span>
+                            </p>
+                        </div>
+                        <button class="delete" onclick="return false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                    <!-- 장바구니 리스트 -->
+                    <li>
+                        <h3 class="proImg" style="--cart-img:url(../img/product_img/IMG1651WRr035576696.png)"><a href="#"></a></h3>
+                        <div class="cartInfo">
+                            <p class="proTitle">
+                                <span>에뛰드</span>
+                                <span>러블리 쿠키 블러셔 4g</span>
+                            </p>
+                            <p class="option"><span>PK002그레이프후르츠젤리 / </span>수량 : 1</p>
+                            <p class="priceInfo">
+                                <!-- <span class="sale">10%</span> -->
+                                <span class="price">9,000원</span>
+                                <!-- <span class="toPrice">70,000원</span> -->
+                            </p>
+                        </div>
+                        <button class="delete" onclick="return false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                    <!-- 장바구니 리스트 -->
+                    <li>
+                        <h3 class="proImg" style="--cart-img:url(../img/product_img/IMG1698CDH726621372.png)"><a href="#"></a></h3>
+                        <div class="cartInfo">
+                            <p class="proTitle">
+                                <span>에스쁘아</span>
+                                <span>[본품+리필] 프로테일러 비글로우 쿠션 뉴클래스 SPF42 PA++ 13gx2</span>
+                            </p>
+                            <p class="option"><span>1호 바닐라 / </span>수량 : 1</p>
+                            <p class="priceInfo">
+                                <span class="sale">10%</span>
+                                <span class="price">34,200원</span>
+                                <span class="toPrice">38,000원</span>
+                            </p>
+                        </div>
+                        <button class="delete" onclick="return false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                    <!-- 장바구니 리스트 -->
+                    <li>
+                        <h3 class="proImg" style="--cart-img:url(../img/product_img/IMG1703Joz658775104.png)"><a href="#"></a></h3>
+                        <div class="cartInfo">
+                            <p class="proTitle">
+                                <span>마몽드</span>
+                                <span>어메이징 딥 민트 클렌징밤 90ml</span>
+                            </p>
+                            <p class="option">수량 : 1</p>
+                            <p class="priceInfo">
+                                <span class="sale">20%</span>
+                                <span class="price">21,600원</span>
+                                <span class="toPrice">27,000원</span>
+                            </p>
+                        </div>
+                        <button class="delete" onclick="return false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                    <!-- 장바구니 리스트 -->
+                    <li>
+                        <h3 class="proImg" style="--cart-img:url(../img/product_img/IMG1705btQ990623708.png)"><a href="#"></a></h3>
+                        <div class="cartInfo">
+                            <p class="proTitle">
+                                <span>마몽드</span>
+                                <span>어메이징 딥 민트 클렌징 폼 120ml</span>
+                            </p>
+                            <p class="option">수량 : 1</p>
+                            <p class="priceInfo">
+                                <span class="sale">20%</span>
+                                <span class="price">13,600원</span>
+                                <span class="toPrice">17,000원</span>
+                            </p>
+                        </div>
+                        <button class="delete" onclick="return false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                    <!-- 장바구니 리스트 -->
+                    <li>
+                        <h3 class="proImg" style="--cart-img:url(../img/product_img/IMG1654coz587227256.png)"><a href="#"></a></h3>
+                        <div class="cartInfo">
+                            <p class="proTitle">
+                                <span>미쟝센</span>
+                                <span>퍼펙트 세럼 미스트 150ml</span>
+                            </p>
+                            <p class="option">수량 : 2</p>
+                            <p class="priceInfo">
+                                <span class="sale">36%</span>
+                                <span class="price">16,400원</span>
+                                <span class="toPrice">26,000원</span>
+                            </p>
+                        </div>
+                        <button class="delete" onclick="return false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                </ul>
+                <div class="cartAct">
+                    <p class="total"><span>TOTAL</span>157,800원</p>
+                    <button>구매하기</button>
+                </div>
+            </div>
+        </header>
+        <!--  -->
+        <div class="subCategory">
+            <ul>
+                <li class="home"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <span>메이크업</span>
+                    <button class="mainBtn"><i class="fa-solid fa-sort-down"></i></button>
+                    <ul class="depth">
+                        <li><a href="#" onclick="return false;">기초</a></li>
+                        <li><a href="#" onclick="return false;">마스크/팩</a></li>
+                        <li><a href="#" onclick="return false;">선케어</a></li>
+                        <li><a href="#" onclick="return false;">클렌징</a></li>
+                        <li><a href="#" onclick="return false;">메이크업</a></li>
+                        <li><a href="#" onclick="return false;">헤어케어</a></li>
+                        <li><a href="#" onclick="return false;">바디케어</a></li>
+                        <li><a href="#" onclick="return false;">미용소품</a></li>
+                        <li><a href="#" onclick="return false;">건강식품</a></li>
+                        <li><a href="#" onclick="return false;">남성</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>립</span>
+                    <button class="subBtn"><i class="fa-solid fa-sort-down"></i></button>
+                    <ul class="depth">
+                        <li><a href="#" onclick="return false;">페이스</a></li>
+                        <li><a href="#" onclick="return false;">헤어</a></li>
+                        <li><a href="#" onclick="return false;">립</a></li>
+                        <li><a href="#" onclick="return false;">치크</a></li>
+                        <li><a href="#" onclick="return false;">네일</a></li>
+                        <li><a href="#" onclick="return false;">아이</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- product -->
+        <section id="productList">
+            <div class="listTitle">
+                <h4><span>메이크업 /</span> 립</h4>
+                <ul class="array">
+                    <li class="on"><a href="#" onclick="return false;">판매순</a></li>
+                    <li><a href="#" onclick="return false;">신상품순</a></li>
+                    <li><a href="#" onclick="return false;">평점순</a></li>
+                    <li><a href="#" onclick="return false;">낮은가격순</a></li>
+                    <li><a href="#" onclick="return false;">높은가격순</a></li>
+                </ul>
+            </div>
+            <div class="proList">
+                <!-- product 1 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1622BTV535373039.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1622BTV535373039hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>에스쁘아</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(4.6)</span>
+                                </div>
+                                <div class="review">리뷰 149</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">꾸뛰르 립 틴트 샤인</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <!-- <span class="sale">15%</span> -->
+                                <span class="price">20,000원</span>
+                                <!-- <span class="toPrice">30,000원</span> -->
+                            </p>
+                            <button class="wishBtn"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>1+1</span> -->
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 2 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1651tvY021604779.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1651tvY021604779hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>에뛰드</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(4.6)</span>
+                                </div>
+                                <div class="review">리뷰 55</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">글라스루즈 틴트 3.8g</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <!-- <span class="sale">15%</span> -->
+                                <span class="price">14,000원</span>
+                                <!-- <span class="toPrice">30,000원</span> -->
+                            </p>
+                            <button class="wishBtn"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>1+1</span> -->
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 3 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1698Lly643982581_356.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1698Lly643982581_356hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>에스쁘아</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="review">리뷰 26</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">노웨어 틴스틱</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <!-- <span class="sale">0%</span> -->
+                                <span class="price">23,000원</span>
+                                <!-- <span class="toPrice">0,000원</span> -->
+                            </p>
+                            <button class="wishBtn"></button>
+                        </div>
+                        <div class="eventKey">
+                            <span>1+1</span>
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 4 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1650byK955704522-2.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1650byK955704522-2hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>에뛰드</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <div class="review">리뷰 40</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">입꼬리 메이커</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <!-- <span class="sale">0%</span> -->
+                                <span class="price">12,000원</span>
+                                <!-- <span class="toPrice">0,000원</span> -->
+                            </p>
+                            <button class="wishBtn on"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>사은품</span> -->
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 5 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1701FJY223086798.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1701FJY223086798hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>에뛰드</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(4.7)</span>
+                                </div>
+                                <div class="review">리뷰 11</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">디어 달링 워터젤 틴트</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <!-- <span class="sale">0%</span> -->
+                                <span class="price">5,500원</span>
+                                <!-- <span class="toPrice">0,000원</span> -->
+                            </p>
+                            <button class="wishBtn"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>사은품</span> -->
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 6 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1679SKU462195929.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1679SKU462195929hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>헤라</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(4.8)</span>
+                                </div>
+                                <div class="review">리뷰 15</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">센슈얼 파우더 매트 리퀴드</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <span class="sale">20%</span>
+                                <span class="price">32,000원</span>
+                                <span class="toPrice">40,000원</span>
+                            </p>
+                            <button class="wishBtn on"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>사은품</span> -->
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 7 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1681OEg952633833.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1681OEg952633833hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>헤라</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="review">리뷰 14</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">센슈얼 누드 글로스</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <span class="sale">10%</span>
+                                <span class="price">36,000원</span>
+                                <span class="toPrice">40,000원</span>
+                            </p>
+                            <button class="wishBtn"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>사은품</span> -->
+                        </div>
+                    </div>
+                </a></article>
+                <!-- product 8 -->
+                <article><a href="#" onclick="return false;">
+                    <div class="proImg" style="--pro-img:url(../img/product_img/IMG1701uRi225784529.png)">
+                        <div class="hoverImg" style="--pro-hover:url(../img/product_img/IMG1701uRi225784529hover.jpg)"></div>
+                    </div>
+                    <div class="proText">
+                        <div class="proInfo">
+                            <span>비레디</span>
+                            <div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <i class="fa-solid fa-star act"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="review">리뷰 1</div>
+                            </div>
+                        </div>
+                        <p class="proTitle">웨이크업 생기립밤</p>
+                        <div class="proCon">
+                            <p class="priceInfo">
+                                <!-- <span class="sale">0%</span> -->
+                                <span class="price">12,900원</span>
+                                <!-- <span class="toPrice">0,000원</span> -->
+                            </p>
+                            <button class="wishBtn on"></button>
+                        </div>
+                        <div class="eventKey">
+                            <!-- <span>사은품</span> -->
+                        </div>
+                    </div>
+                </a></article>
+            </div>
+        </section>
+        <div id="pageLink">
+            <ul class="pageBtn">
+                <li><a href="#" class="on" onclick="return false;">1</a></li>
+                <li><a href="#" onclick="return false;">2</a></li>
+            </ul>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footerTop">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">매장 찾기</a></li>
+                    <li><a href="#">사이트 이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">가맹점 개설문의</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <ul>
+                    <li><strong>(주)아모레퍼시픽</strong></li>
+                    <li>
+                        (주)아모레퍼시픽 대표이사 : 김승환 사업자등록번호 : 106-86-43373<br>
+                        주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)<br>
+                        전자메일주소 : support@aritaum.com<br>
+                        호스팅 제공자 : (주)아모레퍼시픽<br>
+                        통신판매업신고번호 : 2017-서울용산-1308호<br>
+                        건강기능식품판매업 영업신고증 제 8호
+                    </li>
+                    <li>고객님의 안전거래를 위해 현금 거래에 대해 이니페이 에스크로서비스를 이용하실 수 있습니다.  <a href="#" onclick="return false;">이니시스 구매안전서비스 확인하기></a></li>
+                    <li>아리따움의 모든 고객은 연 200만원(최종 결제 금액 기준) 구매 한도 내에서 할인 혜택을 받으실 수 있습니다. 구매한도 초과시 정가로 구매 가능합니다. (온/오프라인 각각 200만원 한도 적용)</li>
+                    <li>AMOREPACIFIC CORPORATION. ALL RIGHTS RESERVED.</li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="#" onclick="return false;" style="--sns-icon:url(../img/sns_kakaoplus.png)"></a></li>
+                    <li><a href="#" onclick="return false;" style="--sns-icon:url(../img/sns_facebook.png)"></a></li>
+                    <li><a href="#" onclick="return false;" style="--sns-icon:url(../img/sns_insta.png)"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- go top -->
+    <a href="#" id="goTop"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- active -->
+    <!-- login -->
+        <div class="popupBack">
+            <div class="login">
+                <button class="closePop" onclick="loginClose();scrollAble();"><i class="fa-solid fa-xmark"></i></button>
+                <h2>아리따움에 로그인하기</h2>
+                <form method="post" action="" id="loginForm">
+                    <input type="text" name="userName" placeholder="ID">
+                    <input type="password" name="userPassword" placeholder="Password">
+                    <label class="rememberChk">
+                        <input type="checkbox">
+                        <span class="checkbox_icon"></span>
+                        <span class="checkbox_text">아이디 저장하기</span>
+                      </label>
+                    <input type="submit" value="Login">
+                    <!-- link -->
+                    <div class="link">
+                        <ul>
+                            <li><a href="#">아이디·비밀번호 찾기</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <!-- SNS login -->
+                    <div class="snsLogin">
+                        <ul>
+                            <li class="kakaoLogin" style="--icon-img:url(../img/log-icon-kakao.png)"><a href="#"></a></li>
+                            <li class="naverLogin" style="--icon-img:url(../img/log-icon-naver.png)"><a href="#"></a></li>
+                            <li class="appleLogin" style="--icon-img:url(../img/log-icon-apple.png)"><a href="#"></a></li>
+                            <li class="googleLogin" style="--icon-img:url(../img/log-icon-google.png)"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

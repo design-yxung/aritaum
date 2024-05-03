@@ -1,0 +1,135 @@
+/* 웹 페이지 기본 설정 */
+.priceInfo>.sale{font-weight: 800; color: var(--main-c); font-size: 22px; margin-right: 5px;}
+.priceInfo>.price{font-weight: 800; font-size: 22px;}
+.priceInfo>.toPrice{font-size: 16px; color: #ccc; text-decoration: line-through; margin-left: 5px;}
+.rating>i{color: #a8a8a8;}
+.rating>i.act{color: #ffe400;}
+
+/* 상품 리스트 디자인 */
+section#best,section#new,section#productList{
+    width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+.listTitle{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.listTitle>h4{
+    display: inline-block;
+    font-size: 24px;
+    color: var(--main-c);
+    font-weight: 700;
+    margin-right: 10px;
+}
+.listTitle>h6{
+    display: inline-block;
+    font-size: 16px;
+    color: #888888;
+    font-weight: 400;
+}
+.listTitle>a{
+    position: absolute;
+    right: 0; bottom: 0;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px; height: 20px;
+    border: 1px solid #888888;
+    color: #888888;
+    text-align: center;
+    line-height: 20px;
+}
+.listTitle>a>i{
+    margin-left: 5px;
+}
+.proList{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.proList>article{
+    width: 335px; height: 500px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+}
+.proList .proImg{
+    position: relative;
+    width: 100%; aspect-ratio: 1/1;
+    background: var(--pro-img) center/cover no-repeat;
+    overflow: hidden;
+}
+.proList .proImg>.hoverImg{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; aspect-ratio: 1/1;
+    background: var(--pro-hover) center/cover no-repeat;
+    display: none;
+    transition: all 0.35s;
+    transform: scale(110%);
+}
+/* 애니메이션 */
+.proList .proImg>.hoverImg{
+    animation-name: scaleUp;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timeline: view;
+}
+@keyframes scaleUp{
+    0%{transform: scale(110%);}
+    100%{transform: scale(100%);}
+}
+
+.proList .proInfo{
+    display: flex;
+    justify-content: space-between;
+    color: #a8a8a8;
+}
+.proList .proInfo>div{
+    display: flex;
+}
+.proList .proInfo .review{
+    margin-left: 5px;
+}
+.proList .proInfo .review::before{
+    content: '·';
+    margin-right: 5px;
+}
+.proList .proText{
+    padding: 15px 10px;
+}
+.proList .proText .proTitle{
+    margin: 12px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+.proList .eventKey{
+    display: flex;
+    margin-top: 15px;
+}
+.proList .eventKey>span{
+    padding: 2px 15px;
+    border: 1px solid var(--main-c);
+    border-radius: 25px;
+    color: var(--main-c);
+    font-size: 14px;
+}
+/* 위시리스트 버튼 있을 경우 */
+.proCon{
+    display: flex;
+    justify-content: space-between;
+}
+.proCon>button.wishBtn{
+    width: 26px; height: 26px;
+    background-color: transparent;
+    border: none; outline: none;
+    background: url(../img/icon-wish.svg) center/cover no-repeat;
+    filter: grayscale(1);
+}
+.proCon>button.wishBtn.on{
+    filter: none;
+}

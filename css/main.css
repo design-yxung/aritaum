@@ -1,0 +1,197 @@
+/* slide */
+#slide{
+    position: relative;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+#slide .slideBtn{
+    position: absolute;
+    z-index: 999;
+    bottom: 30px;left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+#slide .slideBtn .dot{
+    display: inline-block;
+    width: 15px; height: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+#slide .slideBtn .active, #slide .slideBtn .dot:hover {
+    background-color: #717171;
+}
+
+
+#slide .imgSet{
+    position: relative;
+    width: 100%; height: 100%;
+}
+.imgSet .mySlides {display: none}
+
+.imgSet>li{
+    position: absolute;
+    width: 100%; height: 100%;
+    z-index: var(--z);
+}
+#slide .imgSet>li>a{
+    display: block;
+    width: 100%; height: 100%;
+    background: var(--slide-img) center/cover no-repeat;
+}
+.imgSet li>.slideText{
+    position: absolute;
+    bottom: 15%;left: 10%;
+}
+.imgSet li>.slideText>*::selection{
+    background-color: transparent;
+    color: inherit;
+}
+.imgSet .slideText>h2{
+    font-size: 50px;
+    opacity: 0;
+    transform: translateY(100%);
+}
+.imgSet .slideText>p{
+    font-size: 24px;
+    margin-top: 40px;
+    line-height: 35px;
+    opacity: 0;
+    transform: translateY(150%);
+}
+/* animation */
+.imgSet .slideText>h2{
+    animation-name: titleSlide;
+    animation-duration: 1.9s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timeline: auto;
+}
+.imgSet .slideText>p{
+    animation-name: titleSlide-sub;
+    animation-duration: 1.5s;
+    animation-delay: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timeline: auto;
+}
+/* text animation */
+@keyframes titleSlide{
+    0%{opacity: 0; transform: translateY(100%);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+@keyframes titleSlide-sub{
+    0%{opacity: 0; transform: translateY(150%);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* banner */
+.banner{
+    width: 100%; height: 190px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #1e2671;
+    margin-bottom: 110px;
+}
+
+/* container */
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 125px;
+}
+.container>section{
+    width: calc((100% / 2) - 10px);
+}
+.container .proTitle>a>i{
+    position: absolute;
+    top: 50%; right: 10px;
+    transform: translateY(-45%);
+}
+/* contact */
+.contact article>ul{
+    width: 100%;
+    border: 1px solid #c1c1c1;
+}
+.contact article>ul>li{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    padding: 0 20px;
+}
+.contact article>ul>li:not(.contactCall){
+    align-items: center;
+}
+.contact article>ul>li:not(:last-child){
+    border-bottom: 1px solid #c1c1c1;
+}
+.contactTime{
+    line-height: 24px;
+}
+.contactCall{
+    background-color: #f8f8f8 !important;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactCall>span{
+    font-size: 28px;
+    color: var(--main-c);
+}
+.contactWrite{
+    height: 50px !important;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contactWrite>a{
+    display: inline-block;
+    width: 30px; height: 30px;
+    background: url(../img/contact_pen_icon.png) center/cover no-repeat;
+    font-size: 0;
+}
+/* store link */
+.store{
+    width: 100%; height: 170px;
+    margin-bottom: 10px;
+    background: url(../img/store-banner.jpg) center/cover no-repeat;
+}
+.sampleMarket{
+    width: 100%; height: 170px;
+    background: url(../img/sample-market-banner.jpg) center/cover no-repeat;
+}
+.store>a,.sampleMarket>a{
+    display: block;
+    width: 100%; height: 100%;
+}
